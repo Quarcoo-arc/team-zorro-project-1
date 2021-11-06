@@ -5,14 +5,16 @@ function SearchBar() {
     <img src="/images/side hustle.png" width="200px" alt="" />
   );
 
-  let newInputValue;
+  const [inputValue, setInputValue] = useState("");
 
   const updateInputValue = (event) => {
-    newInputValue = event.target.value;
+    const newInputValue = event.target.value;
+    setInputValue(newInputValue);
   };
 
   const handleFormSubmit = (event) => {
-    const newHeading = newInputValue;
+    const newHeading = inputValue;
+    setInputValue("");
 
     newHeading
       ? setHeading(newHeading)
@@ -25,7 +27,11 @@ function SearchBar() {
       <div>{heading}</div>
       <div>
         <form action="" method="" role="search">
-          <input type="search" onChange={updateInputValue}></input>
+          <input
+            type="search"
+            onChange={updateInputValue}
+            value={inputValue}
+          ></input>
           <button onClick={handleFormSubmit} type="submit">
             <img src="/images/iconmonstr-search-thin.svg" />
           </button>
