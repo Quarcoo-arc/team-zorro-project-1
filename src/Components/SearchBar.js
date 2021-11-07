@@ -17,7 +17,7 @@ function SearchBar() {
     setInputValue("");
 
     newHeading
-      ? setHeading(newHeading)
+      ? setHeading(<h1>{newHeading}</h1>)
       : setHeading(<img src="/images/side hustle.png" width="200px" alt="" />);
 
     event.preventDefault();
