@@ -1,0 +1,27 @@
+footer{
+    margin-bottom: 0;
+    padding-top: 1px;
+    background: #c5c5c5;
+    height: 100px;
+    transform: translateY(162px);
+    padding-bottom: 36px;
+}
+.left{
+    transform: translateY(-30px);
+}
+.center{
+    transform: translateY(10px);
+}
+.right{
+    transform: translateY(30px);
+}
+.left, .right{
+
+    display: flex;
+}
+li, p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
