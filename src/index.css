@@ -5,15 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 12.5px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-.header {
-  position: relative;
-  display: block;
 }
 
 ul {
@@ -23,36 +20,107 @@ ul {
   overflow: hidden;
 }
 
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.links {
+  margin-left: auto;
+}
+
 .header ul li {
   display: inline;
-  padding-right: 20px;
   position: relative;
-  float: right;
+}
+
+.profile-pic {
+  margin-top: 10px;
+  height: 20px;
+  width: auto;
+  border-radius: 50%;
 }
 
 .header ul li a {
-  display: block;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#user-image {
+  border: 1px solid grey;
+  border-radius: 50%;
 }
 
 .centralComponent {
   position: relative;
-  margin-top: 70px;
+  margin-top: 90px;
   text-align: center;
 }
 
-.right {
-  float: right;
-  margin-top: -6%;
+.sideHustle {
+  padding-bottom: 10px;
+}
+
+.search {
+  width: 35%;
+  height: 40px;
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 3px 2px 3px 2px silver;
+  border-radius: 25px;
+  padding-left: 15px;
+}
+
+.search::placeholder {
+  padding-left: 10px;
+  color: grey;
+}
+
+#search-icon {
+  position: absolute;
+  right: 35%;
+  padding-top: 8px;
+}
+
+li {
+  display: inline-flex;
+  margin: 10px;
 }
 
 footer {
-  position: inline-block;
+  position: fixed;
+  left: 0%;
   bottom: 0%;
+  width: 100%;
   margin-top: 10%;
   margin-bottom: 0%;
+  background-color: #e6e5e5;
+  padding-top: 10px;
 }
 
-.center {
-  padding: auto 0%;
-  text-align: center;
+hr {
+  background-color: #c7c7c7;
+  border: none;
+  height: 1px;
+}
+
+.footer-top p {
+  margin-left: 10px;
+  padding-left: 15px;
+}
+
+.footer-bottom {
+  display: flex;
+}
+
+.left {
+  padding-left: 15px;
+}
+
+.right {
+  margin-left: auto;
+  padding-right: 15px;
 }
