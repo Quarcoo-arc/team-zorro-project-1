@@ -23,7 +23,7 @@ function SearchBar() {
     event.preventDefault();
   };
   return (
-    <div>
+    <div className="centralComponent">
       <div>{heading}</div>
       <div>
         <form action="" method="" role="search">
