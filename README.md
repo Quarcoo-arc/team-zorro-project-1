@@ -1,6 +1,16 @@
 # Zorro Project 1 for Side Hustle Internship
 
 A simple app that mimicks the google homepage but with the Side-Hustle logo. The logo also changes to whatever is written on the search bar as the user types.
+
+# Insight into the App
+
+The app should look like this:
+
+![Initial Page](/src/assets/sidehustle_page.jpeg)
+
+After inputing a text and clicking the search icon,
+
+![Search Page](/src/assets/inputText_page.jpeg)
 # Quickstart Guide
 
 ### 1. Install npm or yarn
