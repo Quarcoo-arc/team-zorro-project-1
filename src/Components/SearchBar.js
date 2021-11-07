@@ -26,7 +26,7 @@ function SearchBar() {
     <div className="centralComponent">
       <div className="sideHustle">{heading}</div>
       <div>
-        <form action="" method="" role="search">
+        <form action="" onSubmit={handleFormSubmit} method="" role="search">
           <input
             type="search"
             className="search"
