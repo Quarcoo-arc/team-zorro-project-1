@@ -38,6 +38,7 @@ function SearchBar() {
             id="search-icon"
             onClick={handleFormSubmit}
             src="/images/iconmonstr-search-thin.svg"
+            alt=""
           />
         </form>
       </div>
