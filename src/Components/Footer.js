@@ -8,10 +8,6 @@ const Footer = () => {
       </div>
       <hr />
       <div className="footer-bottom">
-        <p className="center">
-          <img src="/images/carbon.png" alt="carbon icon" /> Carbon neutral
-          since 2007
-        </p>
         <ul className="left">
           <li>About</li>
           <li>Advertising</li>

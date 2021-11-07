@@ -24,17 +24,21 @@ function SearchBar() {
   };
   return (
     <div className="centralComponent">
-      <div>{heading}</div>
+      <div className="sideHustle">{heading}</div>
       <div>
         <form action="" method="" role="search">
           <input
             type="search"
+            className="search"
+            placeholder="Enter some text here"
             onChange={updateInputValue}
             value={inputValue}
           ></input>
-          <button onClick={handleFormSubmit} type="submit">
-            <img src="/images/iconmonstr-search-thin.svg" />
-          </button>
+          <img
+            id="search-icon"
+            onClick={handleFormSubmit}
+            src="/images/iconmonstr-search-thin.svg"
+          />
         </form>
       </div>
     </div>
