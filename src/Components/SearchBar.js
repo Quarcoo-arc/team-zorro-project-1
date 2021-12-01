@@ -10,11 +10,15 @@ function SearchBar() {
   const updateInputValue = (event) => {
     const newInputValue = event.target.value;
     setInputValue(newInputValue);
+
+    newInputValue
+      ? setHeading(<h1>{newInputValue}</h1>)
+      : setHeading(<img src="/images/side hustle.png" width="200px" alt="" />);
   };
 
   const handleFormSubmit = (event) => {
     const newHeading = inputValue;
-    setInputValue("");
+    setInputValue(newHeading);
 
     newHeading
       ? setHeading(<h1>{newHeading}</h1>)
